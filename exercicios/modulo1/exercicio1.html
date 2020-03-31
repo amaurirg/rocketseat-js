@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+    <script>
+        var endereco = {
+            rua: "Rua dos Pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        console.log('O usuário mora em ' + endereco.cidade + ' / ' + endereco.uf + ', no bairro ' + endereco.bairro + ', na rua "' + endereco.rua + '" com nº ' + endereco.numero + '.')
+
+        // ou da forma mais atual no momento com ES6
+        console.log(`O usuário mora em ${endereco.cidade} / ${endereco.uf}, no bairro ${endereco.bairro}, na rua "${endereco.rua}" com nº ${endereco.numero}.`)
+    </script>
+</body>
+
+</html>
