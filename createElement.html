@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome" id="nome">
+        </div>
+        <script>
+            // cria um elemento a <a href="http://rocketseat.com.br" title="Site da Rocketseat">Acessar site da Rockeseat</a>
+            var linkElement = document.createElement('a');
+            // atribui o site ao href
+            linkElement.setAttribute('href', 'http://rocketseat.com.br');
+            linkElement.setAttribute('title', 'Site da Rocketseat');
+
+            // cria o texto do elemento a
+            var textElement = document.createTextNode('Acessar site da Rockeseat');
+            // atribui o texto ao elemento a
+            linkElement.appendChild(textElement);
+
+            // recupera o elemento a
+            var containerElement = document.querySelector('#app');
+            // coloca o elemento a criado dentro da div #app
+            containerElement.appendChild(linkElement);
+
+            // recupera o input
+            var inputElement = document.querySelector('#nome');
+            // remove o input
+            containerElement.removeChild(inputElement);
+        </script>
+    </body>
+</html>
