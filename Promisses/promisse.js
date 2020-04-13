@@ -12,7 +12,7 @@ var minhaPromisse = function() {
         xhr.send(null);
 
         // como a requisição não acontece no mesmo fluxo do script por ser assíncrona o JS 
-        // não pode ficar esperando essa re'quisição finalizar para continuar o código. Para
+        // não pode ficar esperando essa requisição finalizar para continuar o código. Para
         // isso usamos o onreadystatechange'
         xhr.onreadystatechange = function() {
             // readyState === 4 onde o 4 significa quando a resposta retornou
